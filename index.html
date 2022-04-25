@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mohamed Aridah" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="flex flex-ai-c flex-jc-sb">
+          <div class="navgations flex flex-ai-c">
+            <div class="toggle-menu hide-for-desktop">
+              <img src="./images/icon-menu.svg" alt="Burger Menu" />
+            </div>
+
+            <div class="logo">
+              <img src="./images/logo.svg" alt="Sneakers Logo" />
+            </div>
+
+            <div class="main-navgation hide-for-mobile">
+              <a href="#">Collections</a>
+              <a href="#">Men</a>
+              <a href="#">Women</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </div>
+
+            <div class="mobile-navgation hide-for-desktop">
+              <div class="close-menu">
+                <img src="./images/icon-close.svg" alt="Close Icon" />
+              </div>
+              <a href="#">Collections</a>
+              <a href="#">Men</a>
+              <a href="#">Women</a>
+              <a href="#">About</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+
+          <div class="controls flex flex-ai-c">
+            <div class="cart">
+              <div class="cart-icon">
+                <span class="in-cart"></span>
+                <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Cart Icon</title>
+                  <path
+                    d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                    fill="#69707D"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </div>
+              <div class="cart-list-wrapper">
+                <h3 class="cart-heading">Cart</h3>
+                <div class="cart-content">
+                  <div class="cart-list"></div>
+                  <button
+                    type="button"
+                    aria-label="Check out"
+                    class="button checkout-btn"
+                  >
+                    Checkout
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="user-account">
+              <div class="user-avater">
+                <img src="./images/image-avatar.png" alt="User Avater" />
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="product-wrapper">
+        <div class="container">
+          <div class="product-images-wrapper">
+            <div class="preview-image-wrapper">
+              <img
+                src="./images/image-product-1.jpg"
+                class="preview-image"
+                alt="Product Image"
+              />
+              <div class="arrows hide-for-desktop">
+                <div class="next">
+                  <img src="./images/icon-next.svg" alt="Next Icon" />
+                </div>
+                <div class="prev">
+                  <img src="./images/icon-previous.svg" alt="Previous Icon" />
+                </div>
+              </div>
+              <div class="count">
+                <p>
+                  <span class="current"></span> of
+                  <span class="total"></span>
+                </p>
+              </div>
+            </div>
+
+            <div class="thumbs-wrapper hide-for-mobile">
+              <div class="thumb-image active">
+                <img
+                  src="./images/image-product-1-thumbnail.jpg"
+                  alt="Product Thumb Image"
+                />
+              </div>
+              <div class="thumb-image">
+                <img
+                  src="./images/image-product-2-thumbnail.jpg"
+                  alt="Product Thumb Image"
+                />
+              </div>
+              <div class="thumb-image">
+                <img
+                  src="./images/image-product-3-thumbnail.jpg"
+                  alt="Product Thumb Image"
+                />
+              </div>
+              <div class="thumb-image">
+                <img
+                  src="./images/image-product-4-thumbnail.jpg"
+                  alt="Product Thumb Image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product-details-wrapper">
+            <p class="product-brabd">Sneaker Company</p>
+            <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+            <p class="product-description">
+              These low-profile sneakers are your perfect casual wear companion.
+              Featuring a durable rubber outer sole, they’ll withstand
+              everything the weather can offer.
+            </p>
+
+            <div class="product-price">
+              <div class="current-price-wrapper">
+                <h2 class="current-price">$125.00</h2>
+                <span class="discount">50%</span>
+              </div>
+              <div class="previous-price-wrapper">
+                <span class="previous-price">$250.00</span>
+              </div>
+            </div>
+
+            <form action="#" class="add-to-cart-form">
+              <div class="product-quantity">
+                <button type="button" class="button minus">
+                  <img src="./images/icon-minus.svg" alt="Minus Icon" />
+                </button>
+                <span class="product-quantity-num">0</span>
+                <button type="button" class="button plus">
+                  <img src="./images/icon-plus.svg" alt="Plus Icon" />
+                </button>
+              </div>
+
+              <button
+                type="submit"
+                aria-label="Add to cart"
+                class="button add-btn"
+              >
+                <img src="./images/icon-cart.svg" alt="" />
+                Add to cart
+              </button>
+
+              <p class="form-alert"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- LightBox -->
+    <div class="lightbox-wrapper">
+      <div class="lightbox-content"></div>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
